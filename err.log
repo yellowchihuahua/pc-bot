@@ -1,0 +1,173 @@
+events.js:306
+    throw err; // Unhandled 'error' event
+    ^
+
+Error [ERR_UNHANDLED_ERROR]: Unhandled error. (ErrorEvent {
+  target: WebSocket {
+    _events: [Object: null prototype] {
+      message: [Function],
+      open: [Function],
+      error: [Function],
+      close: [Function]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    readyState: 2,
+    protocol: '',
+    _binaryType: 'nodebuffer',
+    _finalize: [Function: bound finalize],
+    _closeFrameReceived: false,
+    _closeFrameSent: false,
+    _closeMessage: '',
+    _closeTimer: null,
+    _finalized: true,
+    _closeCode: 1006,
+    _extensions: {},
+    _isServer: false,
+    _receiver: Receiver {
+      _binaryType: 'nodebuffer',
+      _extensions: null,
+      _maxPayload: 0,
+      _bufferedBytes: 0,
+      _buffers: null,
+      _compressed: false,
+      _payloadLength: 43,
+      _fragmented: 0,
+      _masked: false,
+      _fin: true,
+      _mask: null,
+      _opcode: 2,
+      _totalPayloadLength: 0,
+      _messageLength: 0,
+      _fragments: null,
+      _cleanupCallback: null,
+      _isCleaningUp: false,
+      _hadError: false,
+      _loop: false,
+      add: [Function: bound add],
+      onmessage: null,
+      onclose: null,
+      onerror: null,
+      onping: null,
+      onpong: null,
+      _state: 0
+    },
+    _sender: Sender {
+      _extensions: {},
+      _socket: [TLSSocket],
+      _firstFragment: true,
+      _compress: false,
+      _bufferedBytes: 0,
+      _deflating: false,
+      _queue: []
+    },
+    _socket: TLSSocket {
+      _tlsOptions: [Object],
+      _secureEstablished: true,
+      _securePending: false,
+      _newSessionPending: false,
+      _controlReleased: true,
+      secureConnecting: true,
+      _SNICallback: null,
+      servername: 'gateway.discord.gg',
+      alpnProtocol: false,
+      authorized: true,
+      authorizationError: null,
+      encrypted: true,
+      _events: [Object: null prototype],
+      _eventsCount: 6,
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'gateway.discord.gg',
+      _readableState: [ReadableState],
+      readable: false,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      writable: false,
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: undefined,
+      _server: null,
+      ssl: null,
+      _requestCert: true,
+      _rejectUnauthorized: true,
+      parser: null,
+      _httpMessage: null,
+      timeout: 0,
+      [Symbol(res)]: [TLSWrap],
+      [Symbol(asyncId)]: 24,
+      [Symbol(kHandle)]: null,
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: null,
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 37275,
+      [Symbol(kBytesWritten)]: 2112,
+      [Symbol(connect-options)]: [Object]
+    },
+    _error: null,
+    url: 'wss://gateway.discord.gg/?v=6&encoding=etf',
+    _req: null,
+    [Symbol(kCapture)]: false
+  },
+  type: 'error',
+  message: 'read ECONNRESET',
+  error: Error: read ECONNRESET
+      at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27) {
+    errno: 'ECONNRESET',
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+})
+    at Client.emit (events.js:304:17)
+    at WebSocketConnection.onError (C:\Users\Chia-Hua\Documents\1AP Biology Exam\pc_discordbot-master\node_modules\discord.js\src\client\websocket\WebSocketConnection.js:374:17)
+    at WebSocket.onError (C:\Users\Chia-Hua\Documents\1AP Biology Exam\pc_discordbot-master\node_modules\ws\lib\event-target.js:128:16)
+    at WebSocket.emit (events.js:315:20)
+    at C:\Users\Chia-Hua\Documents\1AP Biology Exam\pc_discordbot-master\node_modules\ws\lib\websocket.js:211:14
+    at Receiver.cleanup (C:\Users\Chia-Hua\Documents\1AP Biology Exam\pc_discordbot-master\node_modules\ws\lib\receiver.js:557:13)
+    at WebSocket.finalize (C:\Users\Chia-Hua\Documents\1AP Biology Exam\pc_discordbot-master\node_modules\ws\lib\websocket.js:206:20)
+    at TLSSocket.emit (events.js:315:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3) {
+  code: 'ERR_UNHANDLED_ERROR',
+  context: ErrorEvent {
+    target: WebSocket {
+      _events: [Object: null prototype],
+      _eventsCount: 4,
+      _maxListeners: undefined,
+      readyState: 2,
+      protocol: '',
+      _binaryType: 'nodebuffer',
+      _finalize: [Function: bound finalize],
+      _closeFrameReceived: false,
+      _closeFrameSent: false,
+      _closeMessage: '',
+      _closeTimer: null,
+      _finalized: true,
+      _closeCode: 1006,
+      _extensions: {},
+      _isServer: false,
+      _receiver: [Receiver],
+      _sender: [Sender],
+      _socket: [TLSSocket],
+      _error: null,
+      url: 'wss://gateway.discord.gg/?v=6&encoding=etf',
+      _req: null,
+      [Symbol(kCapture)]: false
+    },
+    type: 'error',
+    message: 'read ECONNRESET',
+    error: Error: read ECONNRESET
+        at TLSWrap.onStreamRead (internal/stream_base_commons.js:205:27) {
+      errno: 'ECONNRESET',
+      code: 'ECONNRESET',
+      syscall: 'read'
+    }
+  }
+}
