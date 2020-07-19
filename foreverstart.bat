@@ -1,2 +1,2 @@
-cd C:\Users\Chia-Hua\Documents\1AP Biology Exam\pc_discordbot-master
+cd C:\Users\Chia-Hua\Documents\pc-bot\pc-bot
 forever start -w bot.js
